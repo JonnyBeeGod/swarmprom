@@ -40,5 +40,6 @@ scrape_configs:
       - 'tasks.node-exporter'
       type: 'A'
       port: 9100
-
-
+  - job_name: 'traefik'
+    static_configs:
+      - targets: ['traefik:8080']
