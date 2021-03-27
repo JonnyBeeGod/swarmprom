@@ -42,4 +42,5 @@ scrape_configs:
       port: 9100
   - job_name: 'traefik'
     static_configs:
-      - targets: ['traefik:8080']
+      - targets: ['traefik.fivethree.one']
+    scheme: https
